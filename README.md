@@ -2,8 +2,7 @@
 
 This project trains and tunes a breast cancer classifier with FLAML AutoML, compares it with a Logistic Regression baseline, tracks every experiment in MLflow, registers the best model in the MLflow Model Registry, explains it with SHAP, and serves the registered model through a Flask API with structured logging, monitoring and a data drift check.
 
-**Student:** Tenzin Namgay (Eyemusican)
-**Module:** DAM405 Machine Learning Operations, College of Science and Technology
+
 
 ## Dataset
 
