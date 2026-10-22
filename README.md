@@ -2,7 +2,8 @@
 
 This project trains and tunes a breast cancer classifier with FLAML AutoML, compares it with a Logistic Regression baseline, tracks every experiment in MLflow, registers the best model in the MLflow Model Registry, explains it with SHAP, and serves the registered model through a Flask API with structured logging, monitoring and a data drift check.
 
-
+**Student:** Tenzin Namgay (Eyemusican)
+**Module:** DAM405 Machine Learning Operations, College of Science and Technology
 
 ## Dataset
 
@@ -12,7 +13,7 @@ Split: 80% train (455 rows), 20% test (114 rows), stratified, `random_state=42`.
 
 ## Project structure
 
-```
+~~~text
 dam405-assignment3-automl-monitoring/
 ├── src/
 │   ├── __init__.py
@@ -37,7 +38,7 @@ dam405-assignment3-automl-monitoring/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-```
+~~~
 
 ## Setup
 
@@ -49,9 +50,13 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ~~~
 
+> **Run every command from the repository root.** MLflow stores artifact paths relative to this folder (`./mlruns`), so running from somewhere else will break model loading.
+
 ## How to run
 
-**1. Train and track (baseline vs AutoML, registers the best model)**
+> **Training is optional.** The committed `mlflow.db` and `mlruns/` already contain both runs and the registered model `breast-cancer-classifier` version 1 with alias `champion`, so steps 2 to 6 work straight after cloning. Running step 1 again will register a new version 2, move the `champion` alias to it, and overwrite the files in `reports/`.
+
+**1. Train and track (optional, baseline vs AutoML, registers the best model)**
 
 ~~~powershell
 python -m src.train
@@ -111,7 +116,16 @@ python -m pytest -v
 | Baseline Logistic Regression | 0.9649 | 0.975 | 0.9286 | 0.9512 | 0.996 | 0.02 s |
 | FLAML AutoML (LightGBM) | 0.9737 | 1.000 | 0.9286 | 0.9630 | 0.995 | 60 s |
 
-The AutoML model was registered as `breast-cancer-classifier` version 1 with the alias `champion`.
+The best model was chosen by **F1**, with ROC AUC as the tie breaker, because F1 balances missed cancers (recall) against false alarms (precision). AutoML won on accuracy, precision and F1. Recall was the same for both (39 of 42 malignant cases caught), and ROC AUC was almost identical. The AutoML model was registered as `breast-cancer-classifier` version 1 with the alias `champion`.
+
+## Explainability findings
+
+SHAP TreeExplainer was run on the registered LightGBM model over the 114 test patients.
+
+* **Top features by mean |SHAP|:** area error, worst area, worst texture, worst concavity, mean concave points. The model mainly relies on tumour **size**, **shape irregularity** (concavity) and **texture**.
+* **Direction:** for most top features, high values push the prediction towards malignant and low values towards benign. `compactness error` is an exception, where high values push slightly towards benign.
+* **Caught case** (`reports/shap_waterfall_caught.png`): large size values (worst area, area error) and concave points push the prediction strongly towards malignant.
+* **Missed case** (`reports/shap_waterfall_missed.png`): this malignant tumour had low `worst texture` and `mean texture`, which pushed the prediction strongly towards benign. Concavity and smoothness pointed towards malignant but were not strong enough, so the model was confidently wrong.
 
 ## Logging and monitoring
 
@@ -120,6 +134,30 @@ The AutoML model was registered as `breast-cancer-classifier` version 1 with the
 * **Format:** `timestamp | level | logger | key=value message`, with a `request_id` on every request
 * **Signals:** request count, error count, error rate, predictions served, average, p95 and max latency
 * **Drift:** the last 200 inputs are compared with the training data using a two sample KS test per feature. Drift is flagged when at least 30% of features have p < 0.05, with a minimum of 30 samples.
+
+## Screenshots
+
+All screenshots are in the `evidence/` folder. Key ones:
+
+**MLflow runs with metrics (baseline vs AutoML)**
+
+![MLflow runs](evidence/fig05_mlflow_metrics.png)
+
+**Model Registry: breast-cancer-classifier version 1 with alias champion**
+
+![Model Registry](evidence/fig10_model_registry.png)
+
+**SHAP summary plot**
+
+![SHAP summary](reports/shap_summary.png)
+
+**Monitoring dashboard after drifted traffic**
+
+![Dashboard drift](evidence/fig22_dashboard_drift.png)
+
+**Log file: ERROR and WARNING lines**
+
+![Log errors and warnings](evidence/fig24_log_errors_warnings.png)
 
 ## Libraries used
 
@@ -131,3 +169,5 @@ FLAML, LightGBM, MLflow, SHAP, scikit learn, pandas, NumPy, SciPy, Flask, matplo
 * SHAP documentation: https://shap.readthedocs.io
 * FLAML documentation: https://microsoft.github.io/FLAML/
 * Breast Cancer Wisconsin dataset: https://scikit-learn.org/stable/datasets/toy_dataset.html
+
+
