@@ -1,0 +1,194 @@
+2026-10-22 11:50:00 | INFO     | ml_service | Loaded model name=breast-cancer-classifier alias=champion version=1
+2026-10-22 11:50:00 | INFO     | ml_service | Starting ML service on http://127.0.0.1:5001
+2026-10-22 11:52:59 | INFO     | ml_service | request_id=e181a259 endpoint=/predict status=200 n=1 latency_ms=41.10
+2026-10-22 11:52:59 | DEBUG    | ml_service | request_id=e181a259 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:53:48 | INFO     | ml_service | request_id=e41482bd endpoint=/predict status=200 n=1 latency_ms=23.13
+2026-10-22 11:53:48 | DEBUG    | ml_service | request_id=e41482bd predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:48 | INFO     | ml_service | request_id=7080ca54 endpoint=/predict status=200 n=1 latency_ms=28.15
+2026-10-22 11:53:48 | DEBUG    | ml_service | request_id=7080ca54 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:53:48 | INFO     | ml_service | request_id=9f6ad4dd endpoint=/predict status=200 n=1 latency_ms=27.47
+2026-10-22 11:53:48 | DEBUG    | ml_service | request_id=9f6ad4dd predictions=[0] proba_malignant=[0.0001]
+2026-10-22 11:53:48 | INFO     | ml_service | request_id=5d73590e endpoint=/predict status=200 n=1 latency_ms=24.83
+2026-10-22 11:53:48 | DEBUG    | ml_service | request_id=5d73590e predictions=[1] proba_malignant=[0.9934]
+2026-10-22 11:53:48 | INFO     | ml_service | request_id=cac8a2fd endpoint=/predict status=200 n=1 latency_ms=25.52
+2026-10-22 11:53:48 | DEBUG    | ml_service | request_id=cac8a2fd predictions=[0] proba_malignant=[0.0013]
+2026-10-22 11:53:48 | INFO     | ml_service | request_id=66d0e83b endpoint=/predict status=200 n=1 latency_ms=25.84
+2026-10-22 11:53:48 | DEBUG    | ml_service | request_id=66d0e83b predictions=[0] proba_malignant=[0.0001]
+2026-10-22 11:53:48 | INFO     | ml_service | request_id=09e5c27b endpoint=/predict status=200 n=1 latency_ms=23.15
+2026-10-22 11:53:48 | DEBUG    | ml_service | request_id=09e5c27b predictions=[1] proba_malignant=[0.9027]
+2026-10-22 11:53:48 | INFO     | ml_service | request_id=b530cfd2 endpoint=/predict status=200 n=1 latency_ms=24.84
+2026-10-22 11:53:48 | DEBUG    | ml_service | request_id=b530cfd2 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=69f04842 endpoint=/predict status=200 n=1 latency_ms=23.81
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=69f04842 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=adf21baa endpoint=/predict status=200 n=1 latency_ms=25.61
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=adf21baa predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=27d51842 endpoint=/predict status=200 n=1 latency_ms=24.26
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=27d51842 predictions=[1] proba_malignant=[0.9992]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=8e97d0a2 endpoint=/predict status=200 n=1 latency_ms=23.07
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=8e97d0a2 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=94af0762 endpoint=/predict status=200 n=1 latency_ms=23.36
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=94af0762 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=3c5b97a3 endpoint=/predict status=200 n=1 latency_ms=23.81
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=3c5b97a3 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=c3c8a06e endpoint=/predict status=200 n=1 latency_ms=24.06
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=c3c8a06e predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=b0a10a55 endpoint=/predict status=200 n=1 latency_ms=24.54
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=b0a10a55 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=9071ad48 endpoint=/predict status=200 n=1 latency_ms=24.40
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=9071ad48 predictions=[0] proba_malignant=[0.0002]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=07871390 endpoint=/predict status=200 n=1 latency_ms=23.66
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=07871390 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=4cb5ac13 endpoint=/predict status=200 n=1 latency_ms=23.25
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=4cb5ac13 predictions=[0] proba_malignant=[0.0015]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=4a9230e6 endpoint=/predict status=200 n=1 latency_ms=24.38
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=4a9230e6 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=7f7d84af endpoint=/predict status=200 n=1 latency_ms=24.17
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=7f7d84af predictions=[0] proba_malignant=[0.0001]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=99547612 endpoint=/predict status=200 n=1 latency_ms=24.08
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=99547612 predictions=[0] proba_malignant=[0.0001]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=9a60c55f endpoint=/predict status=200 n=1 latency_ms=23.12
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=9a60c55f predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=a97c7f24 endpoint=/predict status=200 n=1 latency_ms=25.42
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=a97c7f24 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=4769a1e7 endpoint=/predict status=200 n=1 latency_ms=25.82
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=4769a1e7 predictions=[1] proba_malignant=[0.96]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=353e3963 endpoint=/predict status=200 n=1 latency_ms=24.11
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=353e3963 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=a58fd68b endpoint=/predict status=200 n=1 latency_ms=23.86
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=a58fd68b predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=51173c19 endpoint=/predict status=200 n=1 latency_ms=23.23
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=51173c19 predictions=[1] proba_malignant=[0.9777]
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=f1591825 endpoint=/predict status=200 n=1 latency_ms=23.38
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=f1591825 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:53:49 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=8bdcd8d0 endpoint=/predict status=200 n=1 latency_ms=28.91
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=8bdcd8d0 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:53:49 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=6ecccdd7 endpoint=/predict status=200 n=1 latency_ms=25.58
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=6ecccdd7 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:53:49 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=eade6c76 endpoint=/predict status=200 n=1 latency_ms=24.26
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=eade6c76 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:49 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:53:49 | INFO     | ml_service | request_id=bc715517 endpoint=/predict status=200 n=1 latency_ms=23.78
+2026-10-22 11:53:49 | DEBUG    | ml_service | request_id=bc715517 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:53:50 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:53:50 | INFO     | ml_service | request_id=6d4253ee endpoint=/predict status=200 n=1 latency_ms=24.99
+2026-10-22 11:53:50 | DEBUG    | ml_service | request_id=6d4253ee predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:53:50 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:53:50 | INFO     | ml_service | request_id=2b70a203 endpoint=/predict status=200 n=1 latency_ms=23.55
+2026-10-22 11:53:50 | DEBUG    | ml_service | request_id=2b70a203 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:50 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:53:50 | INFO     | ml_service | request_id=3a5449ab endpoint=/predict status=200 n=1 latency_ms=23.77
+2026-10-22 11:53:50 | DEBUG    | ml_service | request_id=3a5449ab predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:50 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:53:50 | INFO     | ml_service | request_id=1bd7b116 endpoint=/predict status=200 n=1 latency_ms=23.93
+2026-10-22 11:53:50 | DEBUG    | ml_service | request_id=1bd7b116 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:50 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:53:50 | INFO     | ml_service | request_id=6ce174a0 endpoint=/predict status=200 n=1 latency_ms=23.87
+2026-10-22 11:53:50 | DEBUG    | ml_service | request_id=6ce174a0 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:50 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:53:50 | INFO     | ml_service | request_id=4942b84a endpoint=/predict status=200 n=1 latency_ms=23.75
+2026-10-22 11:53:50 | DEBUG    | ml_service | request_id=4942b84a predictions=[1] proba_malignant=[0.9974]
+2026-10-22 11:53:50 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:53:50 | INFO     | ml_service | request_id=a052c9a4 endpoint=/predict status=200 n=1 latency_ms=23.79
+2026-10-22 11:53:50 | DEBUG    | ml_service | request_id=a052c9a4 predictions=[0] proba_malignant=[0.0]
+2026-10-22 11:53:50 | DEBUG    | ml_service | drift_check share=0.0 detected=False
+2026-10-22 11:55:29 | ERROR    | ml_service | request_id=9e0bd0fb endpoint=/predict status=400 latency_ms=0.10 error="instance 0 is missing 29 features, e.g. ['mean texture', 'mean perimeter', 'mean area']"
+2026-10-22 11:55:29 | ERROR    | ml_service | request_id=975916b2 endpoint=/predict status=400 latency_ms=0.10 error="instance 0 feature 'mean radius' must be a number"
+2026-10-22 11:55:29 | ERROR    | ml_service | request_id=9d96d0b8 endpoint=/predict status=400 latency_ms=0.14 error="'instances' must be a non empty list"
+2026-10-22 11:55:29 | ERROR    | ml_service | request_id=fce06967 endpoint=/predict status=400 latency_ms=0.11 error="Body must be JSON with an 'instances' list"
+2026-10-22 11:55:29 | ERROR    | ml_service | request_id=895cd6fb endpoint=/predict status=400 latency_ms=0.03 error="Body must be JSON with an 'instances' list"
+2026-10-22 11:56:53 | INFO     | ml_service | Drift buffer reset
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=ccbfcb9d endpoint=/predict status=200 n=1 latency_ms=23.79
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=ccbfcb9d predictions=[0] proba_malignant=[0.0126]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=29199fc5 endpoint=/predict status=200 n=1 latency_ms=25.75
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=29199fc5 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=094b2eca endpoint=/predict status=200 n=1 latency_ms=25.18
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=094b2eca predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=a9a34e74 endpoint=/predict status=200 n=1 latency_ms=24.43
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=a9a34e74 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=6cf7f075 endpoint=/predict status=200 n=1 latency_ms=26.43
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=6cf7f075 predictions=[1] proba_malignant=[0.9983]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=07102cbe endpoint=/predict status=200 n=1 latency_ms=24.54
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=07102cbe predictions=[1] proba_malignant=[0.9994]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=80c6ac1c endpoint=/predict status=200 n=1 latency_ms=23.77
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=80c6ac1c predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=f5ef3582 endpoint=/predict status=200 n=1 latency_ms=24.72
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=f5ef3582 predictions=[0] proba_malignant=[0.4329]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=4aed4b91 endpoint=/predict status=200 n=1 latency_ms=24.40
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=4aed4b91 predictions=[1] proba_malignant=[0.52]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=5c2e3cf3 endpoint=/predict status=200 n=1 latency_ms=23.90
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=5c2e3cf3 predictions=[1] proba_malignant=[0.9967]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=f0ff9a97 endpoint=/predict status=200 n=1 latency_ms=22.94
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=f0ff9a97 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=61b26a7b endpoint=/predict status=200 n=1 latency_ms=24.75
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=61b26a7b predictions=[0] proba_malignant=[0.035]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=e85d8c01 endpoint=/predict status=200 n=1 latency_ms=24.63
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=e85d8c01 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=e7ce6243 endpoint=/predict status=200 n=1 latency_ms=24.51
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=e7ce6243 predictions=[1] proba_malignant=[0.9743]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=af3f3f62 endpoint=/predict status=200 n=1 latency_ms=24.65
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=af3f3f62 predictions=[1] proba_malignant=[0.9997]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=8ba817ad endpoint=/predict status=200 n=1 latency_ms=23.90
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=8ba817ad predictions=[0] proba_malignant=[0.0032]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=6055456b endpoint=/predict status=200 n=1 latency_ms=24.21
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=6055456b predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=e64eba93 endpoint=/predict status=200 n=1 latency_ms=23.54
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=e64eba93 predictions=[1] proba_malignant=[0.9917]
+2026-10-22 11:56:53 | INFO     | ml_service | request_id=155d9962 endpoint=/predict status=200 n=1 latency_ms=24.33
+2026-10-22 11:56:53 | DEBUG    | ml_service | request_id=155d9962 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=9b072896 endpoint=/predict status=200 n=1 latency_ms=25.31
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=9b072896 predictions=[0] proba_malignant=[0.4362]
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=33e6a4ff endpoint=/predict status=200 n=1 latency_ms=23.32
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=33e6a4ff predictions=[0] proba_malignant=[0.0006]
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=9910e2de endpoint=/predict status=200 n=1 latency_ms=23.52
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=9910e2de predictions=[1] proba_malignant=[0.9887]
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=07f0e5b5 endpoint=/predict status=200 n=1 latency_ms=24.11
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=07f0e5b5 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=0c9e0905 endpoint=/predict status=200 n=1 latency_ms=23.91
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=0c9e0905 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=37763176 endpoint=/predict status=200 n=1 latency_ms=24.97
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=37763176 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=4a4b2995 endpoint=/predict status=200 n=1 latency_ms=23.60
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=4a4b2995 predictions=[0] proba_malignant=[0.0007]
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=f5d59a79 endpoint=/predict status=200 n=1 latency_ms=24.14
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=f5d59a79 predictions=[0] proba_malignant=[0.0067]
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=9cddc10d endpoint=/predict status=200 n=1 latency_ms=22.64
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=9cddc10d predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=ab72f317 endpoint=/predict status=200 n=1 latency_ms=24.66
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=ab72f317 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=8529448d endpoint=/predict status=200 n=1 latency_ms=23.95
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=8529448d predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:54 | DEBUG    | ml_service | drift_check share=1.0 detected=True
+2026-10-22 11:56:54 | WARNING  | ml_service | DATA DRIFT DETECTED drifted=30/30 share=1.0 top=['mean fractal dimension', 'mean smoothness', 'worst smoothness', 'mean symmetry', 'worst fractal dimension']
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=a0bce180 endpoint=/predict status=200 n=1 latency_ms=23.82
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=a0bce180 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:54 | DEBUG    | ml_service | drift_check share=1.0 detected=True
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=c2235aa0 endpoint=/predict status=200 n=1 latency_ms=25.30
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=c2235aa0 predictions=[1] proba_malignant=[0.9751]
+2026-10-22 11:56:54 | DEBUG    | ml_service | drift_check share=1.0 detected=True
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=36083b47 endpoint=/predict status=200 n=1 latency_ms=24.47
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=36083b47 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:54 | DEBUG    | ml_service | drift_check share=1.0 detected=True
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=2a6801c3 endpoint=/predict status=200 n=1 latency_ms=23.70
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=2a6801c3 predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:54 | DEBUG    | ml_service | drift_check share=1.0 detected=True
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=e4ec789e endpoint=/predict status=200 n=1 latency_ms=23.94
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=e4ec789e predictions=[1] proba_malignant=[0.9998]
+2026-10-22 11:56:54 | DEBUG    | ml_service | drift_check share=1.0 detected=True
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=d0142de7 endpoint=/predict status=200 n=1 latency_ms=27.89
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=d0142de7 predictions=[1] proba_malignant=[0.9999]
+2026-10-22 11:56:54 | DEBUG    | ml_service | drift_check share=1.0 detected=True
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=a90c8a05 endpoint=/predict status=200 n=1 latency_ms=23.45
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=a90c8a05 predictions=[1] proba_malignant=[0.9961]
+2026-10-22 11:56:54 | DEBUG    | ml_service | drift_check share=1.0 detected=True
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=8fb1f45f endpoint=/predict status=200 n=1 latency_ms=25.78
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=8fb1f45f predictions=[0] proba_malignant=[0.0037]
+2026-10-22 11:56:54 | DEBUG    | ml_service | drift_check share=1.0 detected=True
+2026-10-22 11:56:54 | INFO     | ml_service | request_id=c9849a2f endpoint=/predict status=200 n=1 latency_ms=24.95
+2026-10-22 11:56:54 | DEBUG    | ml_service | request_id=c9849a2f predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:55 | DEBUG    | ml_service | drift_check share=1.0 detected=True
+2026-10-22 11:56:55 | INFO     | ml_service | request_id=e20beafc endpoint=/predict status=200 n=1 latency_ms=24.71
+2026-10-22 11:56:55 | DEBUG    | ml_service | request_id=e20beafc predictions=[1] proba_malignant=[1.0]
+2026-10-22 11:56:55 | DEBUG    | ml_service | drift_check share=1.0 detected=True
